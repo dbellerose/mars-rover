@@ -1,0 +1,9 @@
+START 1 0 N
+
+MAP
+🟩🟩🌳🟩🟩
+🟩🟫🟩🪨🟩
+🟩🟩🟩🟩🟩
+
+COMMANDS
+FFRFLF
