@@ -4,7 +4,7 @@
 PYTHON ?= python3
 DEMO_MISSION := examples/demo.txt
 
-.PHONY: test run
+.PHONY: test run fix-start fix-end
 
 test:
 	PYTHONPATH=src $(PYTHON) -m pytest
@@ -15,3 +15,9 @@ run: $(DEMO_MISSION)
 $(DEMO_MISSION):
 	@mkdir -p $(dir $@)
 	@printf '%s\n' 'START 1 0 N' '' 'MAP' '🟩🟩🌳🟩🟩' '🟩🟫🟩🪨🟩' '🟩🟩🟩🟩🟩' '' 'COMMANDS' 'FFRFLF' > $@
+
+fix-start:
+	@touch .claude/fix-mode
+
+fix-end:
+	@rm -f .claude/fix-mode
