@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Marqueur local du mode correction (make fix-start / fix-end)
+.claude/fix-mode
